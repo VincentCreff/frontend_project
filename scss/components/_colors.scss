@@ -1,0 +1,78 @@
+/*--------------------------------------------------------------
+# COLORS COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+
+// COLORS
+
+// DEFAULT TEXT COLOR
+
+$color-default: #ffffff;
+$color-default-dark: #0b0c10;
+
+// DEFAULT LINKS COLOR
+$color-links:#45a29e;
+$color-links-hover:#1ec3e0;
+
+// PRIMARY COLORS
+$color-primary:#45a29e;
+$color-primary-light: #66fcf1;
+$color-primary-dark: #0189a1;
+
+
+// SECONDARY COLORS
+$color-secondary:#485664;
+$color-secondary-light: #c5c6c7;
+$color-secondary-dark: #3a4753;
+
+// BACKGROUND COLOR
+$wpfr-body-bg: #1f2833;
+
+/*--------------------------------------------------------------
+# SET COLOR AND BACKGROUND CLASS NAMES --- WisePanda.fr 
+--------------------------------------------------------------*/
+
+// TEXT COLORS
+.color-p {
+    color:$color !important;
+}
+.color-pl {
+    color:$color-primary-light !important;
+}
+.color-pd {
+    color:$color-primary-dark !important;
+}
+.color-blue{
+    color: var(--bs-blue) !important
+}
+.color-indigo{
+    color: var(--bs-indigo) !important
+}
+.color-purple{
+    color: var(--bs-purple) !important
+}
+.color-pink{
+    color: var(--bs-pink) !important
+}
+.color-red{
+    color: var(--bs-red) !important
+}
+.color-orange{
+    color: var(--bs-orange) !important
+}
+.color-yellow{
+    color: var(--bs-yellow) !important
+}
+.color-green{
+    color: var(--bs-green) !important
+}
+.color-teal{
+    color: var(--bs-teal) !important
+}
+.color-cyan{
+    color: var(--bs-cyan) !important
+}
+
+//BACKGROUND COLOR
+.wpfr-bg {
+    color: $wpfr-body-bg !important;
+}
