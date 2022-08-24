@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*--------------------------------------------------------------
+# FONTS COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11116,6 +11120,328 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important;
+  }
+}
+/*--------------------------------------------------------------
+# COLORS COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# SET COLOR AND BACKGROUND CLASS NAMES --- WisePanda.fr 
+--------------------------------------------------------------*/
+.color-p {
+  color: #45a29e !important;
+}
+
+.color-pl {
+  color: #66fcf1 !important;
+}
+
+.color-pd {
+  color: #0189a1 !important;
+}
+
+.color-blue {
+  color: var(--bs-blue) !important;
+}
+
+.color-indigo {
+  color: var(--bs-indigo) !important;
+}
+
+.color-purple {
+  color: var(--bs-purple) !important;
+}
+
+.color-pink {
+  color: var(--bs-pink) !important;
+}
+
+.color-red {
+  color: var(--bs-red) !important;
+}
+
+.color-orange {
+  color: var(--bs-orange) !important;
+}
+
+.color-yellow {
+  color: var(--bs-yellow) !important;
+}
+
+.color-green {
+  color: var(--bs-green) !important;
+}
+
+.color-teal {
+  color: var(--bs-teal) !important;
+}
+
+.color-cyan {
+  color: var(--bs-cyan) !important;
+}
+
+.wpfr-bg {
+  color: #1f2833 !important;
+}
+
+/*--------------------------------------------------------------
+# MIXINS COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# BOUTTONS COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+.btn--contact, .btn--contact:focus {
+  font-size: 1rem;
+  color: #ffffff;
+  background: #45a29e;
+  padding: 8px 23px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.btn--contact:hover, .btn--contact:focus:hover {
+  color: #ffffff;
+  background: rgba(69, 162, 158, 0.85);
+}
+
+/*--------------------------------------------------------------
+# ANIMATION COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# GENERAL COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #0189a1;
+  text-decoration: none;
+}
+a:hover {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p, li {
+  color: #ffffff;
+}
+
+body {
+  background: #1f2833;
+}
+
+/*--------------------------------------------------------------
+# SECTION & SECTION-HEARDER COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+.section-header h2 {
+  font-style: 3rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+.section-header p {
+  margin: 0 auto;
+  color: #c5c6c7;
+}
+
+@media (min-width: 1280px) {
+  p {
+    max-width: 80%;
+  }
+}
+/*--------------------------------------------------------------
+# NAVBAR COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+@media (min-width: 1280px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar ul li {
+    position: relative;
+  }
+  .navbar > ul > li {
+    white-space: nowrap;
+  }
+  .navbar a, .navbar a:focus {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(11, 12, 16, 0.7);
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  .navbar > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0189a1;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .navbar a:hover:before, .navbar li:hover > a:hover, .navbar .active:before {
+    visibility: visible;
+    transform: scaleX(0.7);
+  }
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #0189a1;
+  }
+}
+/*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
+@media (max-width: 1279px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: calc(100% - 70px);
+    bottom: 0;
+    transition: 0.3s;
+    z-index: 9997;
+  }
+  .navbar ul {
+    position: absolute;
+    inset: 0;
+    padding: 10px 0;
+    margin: 0;
+    background: rgba(11, 12, 16, 0.9);
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+  .navbar a, .navbar a:focus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  .navbar a i, .navbar a:focus i {
+    font-size: 0.75rem;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  .navbar a a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #ffffff;
+  }
+  .navbar .mobile-nav-toggle {
+    display: block !important;
+    color: #0b0c10;
+    font-size: 1.75rem;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    position: fixed;
+    top: 20px;
+    z-index: 9999;
+    right: 20px;
+  }
+  .navbar .mobile-nav-toggle.bi-x {
+    color: #0b0c10;
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+    z-index: 9995;
+    position: relative;
+  }
+  .mobile-nav-active .navbar {
+    left: 0;
+  }
+  .mobile-nav-active .navbar:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(72, 86, 100, 0.8);
+    z-index: 9996;
+  }
+}
+/*--------------------------------------------------------------
+# PRELOADER COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ALL USE ROUTES COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# HEADER SECTION --- WisePanda.fr 
+--------------------------------------------------------------*/
+.header {
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 999;
+}
+.header.sticked {
+  background: #f8f9fa;
+  box-shadow: 0px 2px 20px rgba(102, 252, 241, 0.9);
+}
+.header.sticked .logo h1 {
+  color: #0b0c10;
+}
+.header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+.header .logo h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.header .logo h1 span:first-child {
+  color: #66fcf1;
+  font-weight: 500;
+}
+.header .logo h1 span:last-child {
+  color: #45a29e;
+  font-weight: 900;
+}
+
+@media (max-width: 1279px) {
+  .btn--contact, .btn--contact:focus {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 505px) {
+  .btn--contact {
+    display: none;
   }
 }
 /*--------------------------------------------------------------

@@ -3,3 +3,25 @@
 # BOUTTONS COMPONENTS --- WisePanda.fr 
 --------------------------------------------------------------*/
 
+@use "./colors" as c;
+@use "./fonts" as f;
+
+
+// All buttons call-to-action
+
+.btn {
+    &--contact, &--contact:focus{
+        font-size: 1rem;
+        color: c.$color-default;
+        background: c.$color-primary;
+        padding: 8px 23px;
+        border-radius: 4px;
+        transition: 0.3s;
+        font-family: f.$font-default;
+        text-transform: uppercase;
+    }
+    &--contact:hover, &--contact:focus:hover{
+        color: c.$color-default;
+        background: rgba(c.$color-primary, 0.85)
+    }
+}
