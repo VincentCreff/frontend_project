@@ -11204,10 +11204,68 @@ textarea.form-control-lg {
   color: #ffffff;
   background: rgba(69, 162, 158, 0.85);
 }
+.btn--hero-contact {
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #ffffff;
+  background: #45a29e;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.btn--hero-contact:hover {
+  background: rgba(69, 162, 158, 0.85);
+  color: #ffffff;
+}
+.btn--watch-video {
+  font-size: 1rem;
+  margin-left: 25px;
+  font-weight: 600;
+  transition: 0.5s;
+  color: #c5c6c7;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.btn--watch-video i {
+  transition: 0.3s;
+  color: #45a29e;
+  line-height: 0;
+  margin-right: 8px;
+}
+.btn--watch-video:hover {
+  color: #45a29e;
+}
+.btn--watch-video:hover i {
+  color: rgba(69, 162, 158, 0.8);
+}
 
 /*--------------------------------------------------------------
 # ANIMATION COMPONENTS --- WisePanda.fr 
 --------------------------------------------------------------*/
+.animated {
+  margin-bottom: 60px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 /*--------------------------------------------------------------
 # GENERAL COMPONENTS --- WisePanda.fr 
 --------------------------------------------------------------*/
@@ -11444,6 +11502,101 @@ section {
     display: none;
   }
 }
+/*--------------------------------------------------------------
+# HERO BANNER ANIMATED SECTION --- WisePanda.fr 
+--------------------------------------------------------------*/
+.hero-animated {
+  width: 100%;
+  min-height: 50vh;
+  background: url("../img/hero-banner/hero-bg.png") center center;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0 0px;
+}
+.hero-animated h2 {
+  margin: 0 0 10px 0;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.hero-animated h2 span {
+  color: #45a29e;
+}
+.hero-animated p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 30px 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .hero-animated .animated {
+    max-width: 45%;
+  }
+}
+@media (max-width: 991px) {
+  .hero-animated .animated {
+    max-width: 60%;
+  }
+}
+@media (max-width: 640px) {
+  .hero-animated h2 {
+    font-size: 2rem;
+  }
+  .hero-animated p {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+  }
+  .hero-animated .btn--hero-contact, .hero-animated .btn--watch-video {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 575px) {
+  .hero-animated .animated {
+    max-width: 80%;
+  }
+}
+/*--------------------------------------------------------------
+# FEATURED-SERVICES SECTION --- WisePanda.fr 
+--------------------------------------------------------------*/
+.featured-services .service-item {
+  padding: 30px;
+  transition: all ease-in-out 0.4s;
+  background: #ffffff;
+  height: 100%;
+}
+.featured-services .icon {
+  margin-bottom: 10px;
+}
+.featured-services .icon i {
+  color: #45a29e;
+  font-size: 2.25rem;
+  transition: 0.3s;
+}
+.featured-services h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+.featured-services h4 a {
+  color: #485664;
+  transition: ease-in-out 0.3s;
+}
+.featured-services p {
+  line-height: 24px;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  color: #0b0c10;
+}
+.featured-services:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0 60px rgba(72, 86, 100, 0.1);
+}
+.featured-services a {
+  color: #45a29e;
+}
+
 /*--------------------------------------------------------------
 # INDEX STYLINGS --- WisePanda.fr 
 --------------------------------------------------------------*/

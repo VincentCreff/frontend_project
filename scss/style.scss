@@ -3,5 +3,7 @@
 --------------------------------------------------------------*/
 
 @use "./custom.scss";
-@use "./sections/header"
+@use "./sections/header";
+@use "./sections/onepage/hero-banner";
+@use "./sections/onepage/featured-services"
 

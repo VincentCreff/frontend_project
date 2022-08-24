@@ -1,3 +1,21 @@
 /*--------------------------------------------------------------
 # ANIMATION COMPONENTS --- WisePanda.fr 
 --------------------------------------------------------------*/
+
+// hero-banner image up&down animation
+.animated{
+    margin-bottom: 60px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{transform: translateY(-10px);}
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{transform: translateY(-10px);}
+}
