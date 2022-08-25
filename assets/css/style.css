@@ -11257,6 +11257,100 @@ textarea.form-control-lg {
   color: #ffffff;
   background: #45a29e;
 }
+.btn--play {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#45a29e 50%, rgba(69, 162, 158, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
+}
+.btn--play::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(69, 162, 158, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+.btn--play::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #ffffff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.btn--play:hover::before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #ffffff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+.btn--play:hover::after {
+  border-left: 15px solid #45a29e;
+  transform: scale(20);
+}
+.btn--read-more {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  transition: 0.3s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #45a29e;
+}
+.btn--read-more i {
+  font-size: 1.125rem;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+.btn--read-more:hover {
+  background: rgba(69, 162, 158, 0.9);
+  color: #ffffff;
+  padding-right: 19px;
+}
+.btn--read-more:hover i {
+  margin-left: 10px;
+}
 
 /*--------------------------------------------------------------
 # ANIMATION COMPONENTS --- WisePanda.fr 
@@ -11280,6 +11374,26 @@ textarea.form-control-lg {
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
   }
 }
 /*--------------------------------------------------------------
@@ -11762,6 +11876,50 @@ section {
   border-radius: 15px;
 }
 
+/*--------------------------------------------------------------
+# ONFOCUS SECTION --- WisePanda.fr 
+--------------------------------------------------------------*/
+.onfocus {
+  padding: 0;
+  background-color: #0b0c10;
+}
+.onfocus .video-play {
+  min-height: 400px;
+  background: linear-gradient(rgba(11, 12, 16, 0.4), rgba(11, 12, 16, 0.7)), url("../img/onfocus/onfocus-video-bg.jpg") center center;
+  background-size: cover;
+}
+.onfocus .content {
+  background: linear-gradient(rgba(11, 12, 16, 0.5), rgba(11, 12, 16, 0.8)), url("../img/onfocus/onfocus-content-bg.jpg") center center;
+  background-size: cover;
+  color: rgba(11, 12, 16, 0.8);
+  padding: 40px;
+}
+.onfocus .content h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.onfocus .content ul {
+  list-style: none;
+  padding: 0;
+}
+.onfocus .content ul li {
+  padding-bottom: 10px;
+}
+.onfocus .content ul li i {
+  font-size: 1.25rem;
+  padding-right: 4px;
+  color: #45a29e;
+}
+.onfocus .content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .onfocus .content {
+    padding: 80px;
+  }
+}
 /*--------------------------------------------------------------
 # INDEX STYLINGS --- WisePanda.fr 
 --------------------------------------------------------------*/
