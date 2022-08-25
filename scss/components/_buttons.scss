@@ -66,4 +66,23 @@
             }
         }
     }
+
+    //--cta for cta section
+    &--cta{
+        color:c.$color-default;
+        font-weight: 500;
+        font-size: 1rem;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 5px;
+        transition: 0.5s;
+        margin-top: 10px;
+        background: rgba(c.$color-primary, 0.9);
+        text-transform: uppercase;
+        &:hover{
+            color:c.$color-default;
+            background: c.$color-primary
+
+        }
+    }
 }

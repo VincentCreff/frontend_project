@@ -11241,6 +11241,22 @@ textarea.form-control-lg {
 .btn--watch-video:hover i {
   color: rgba(69, 162, 158, 0.8);
 }
+.btn--cta {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 10px;
+  background: rgba(69, 162, 158, 0.9);
+  text-transform: uppercase;
+}
+.btn--cta:hover {
+  color: #ffffff;
+  background: #45a29e;
+}
 
 /*--------------------------------------------------------------
 # ANIMATION COMPONENTS --- WisePanda.fr 
@@ -11683,6 +11699,67 @@ section {
 .clients .swiper-slide:hover {
   filter: none;
   opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# CALL-TO-ACTION SECTION --- WisePanda.fr 
+--------------------------------------------------------------*/
+.cta {
+  padding: 0;
+  margin-bottom: 60px;
+}
+.cta .container {
+  padding: 80px;
+  background-color: rgba(197, 198, 199, 0.1);
+  border-radius: 15px;
+}
+.cta .container .content h3 {
+  color: #c5c6c7;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.cta .container .content em {
+  font-style: normal;
+  position: relative;
+}
+.cta .container .content em::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 10px;
+  background: rgba(102, 252, 241, 0.5);
+  z-index: -1;
+}
+.cta .container .content p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.cta .container .img__cta {
+  position: relative;
+}
+.cta .container .img__cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  transform: rotate(12deg);
+}
+.cta .container .img__cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  transform: rotate(6deg);
+}
+.cta .container .img__cta img {
+  position: relative;
+  z-index: 3;
+  border-radius: 15px;
 }
 
 /*--------------------------------------------------------------
